@@ -38,3 +38,8 @@ var swiper = new Swiper(".mySwiper ", {
 });
 
 //EndSlider
+//open link in new tab
+let button = document.querySelector("#link-site");
+button.addEventListener("click", () => {
+  const tab = window.open("https://google.com", "_blank");
+});

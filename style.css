@@ -38,7 +38,10 @@ section:nth-child(even) {
 }
 .btn:hover {
   background: var(--green);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+}
+
+.btn-Shadow:hover {
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 }
 
@@ -215,6 +218,68 @@ header .icons #menu-bars {
 }
 
 /* #Endregion */
+
+/*SRART Dishes*/
+.sub-heading {
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.dishes .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+.dishes .box-container .box {
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+}
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye {
+  position: absolute;
+  top: 1.5rem;
+  background: #eee;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: var(--black);
+}
+.dishes .box-container .box .fa-heart {
+  right: -10rem;
+}
+.dishes .box-container .box .fa-eye {
+  left: -10rem;
+}
+.dishes .box-container .box:hover .fa-heart {
+  right: 1rem;
+}
+.dishes .box-container .box:hover .fa-eye {
+  left: 1rem;
+}
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover {
+  color: red;
+  background: #fff;
+  transform: rotate(360deg);
+}
+/*End Dishes*/
 
 @media (max-width: 991px) {
   html {
