@@ -1,210 +1,636 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Delivery Food</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="swiper-bundle.min.css" />
-  </head>
 
-  <body>
-    <header>
-      <a id="link-site" class="logo">
-        <i class="fas fab fas fas fas fa-utensils"></i>Delivery Food</a
-      >
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Delivery Food</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+</head>
 
-      <nav class="navbar">
-        <a href="#home" class="active">home</a>
-        <a href="#dishes">dishes</a>
-        <a href="#about">about</a>
-        <a href="#menu">menu</a>
-        <a href="#pista">pista</a>
-        <a href="#home">home</a>
-      </nav>
+<body>
+  <header>
+    <a id="link-site" class="logo">
+      <i class="fas fab fas fas fas fa-utensils"></i>Delivery Food</a>
 
-      <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon"></i>
-        <a href="javascript:void(0)" class="fas fa-heart"></a>
-        <a href="javascript:void(0)" class="fas fas fa-shopping-cart"></a>
-      </div>
-    </header>
+    <nav class="navbar">
+      <a href="#home" class="active">home</a>
+      <a href="#dishes">dishes</a>
+      <a href="#about">about</a>
+      <a href="#menu">menu</a>
+      <a href="#pista">pista</a>
+    </nav>
 
-    <!--Search-->
-    <form action="" id="search-form">
-      <input type="search" id="search-box" placeholder="Search..." />
-      <label for="search-box" class="fas fa-search"></label>
-      <i class="fa fa-times" id="searchFormClose"></i>
-    </form>
-    <!--EndSearch-->
-    
-    <!--Slider-->
-    <section class="home" id="home">
-      <div class="home-slider swiper mySwiper">
-        <div class="wrapper swiper-wrapper">
-          <div class="slide swiper-slide">
-            <div class="content">
-              <span>Hummus Pizza</span>
-              <h3>Our Special</h3>
-              <p>
-                This pizza uses hummus instead of the usual red sauce a unique
-                and healthy pizza for those bored with the traditional. Top with
-                your favorite veggies and cheese.
-              </p>
-              <a class="btn btn-Shadow" href="javascript:void(0)">Order Now</a>
-            </div>
-            <div class="image">
-                <img src="/img/home/3.png">
-            </div>
-          
-        </div>
-        <div class="slide swiper-slide">
-            <div class="content">
-              <span>Cheddar Chicken</span>
-              <h3>Our Special</h3>
-              <p>
-                A quick and easy coated chicken recipe for busy people on the go!
-              </p>
-              <a class="btn btn-Shadow" href="javascript:void(0)">Order Now</a>
-            </div>
-            <div class="image">
-                <img src="/img/home/2.png">
-            </dir>
-          </div>
-        </div>
-        <div class="slide swiper-slide">
-            <div class="content">
-              <span>Spaghetti with Corned Beef</span>
-              <h3>Our Special</h3>
-              <p>
-                Quick and easy spaghetti using canned corned beef and bottled spaghetti sauce. Delicious! For added nutrition, add a can of mixed vegetables or cut-up fresh vegetable, such as chopped onion or green peppers and tomatoes.
-              </p>
-              <a class="btn btn-Shadow" href="javascript:void(0)">Order Now</a>
-            </div>
-            <div class="image">
-                <img src="/img/home/1.png">
-            </dir>
-          </div>
-        </div>
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="search-icon"></i>
+      <a href="javascript:void(0)" class="fas fa-heart"></a>
+      <a href="javascript:void(0)" class="fas fas fa-shopping-cart"></a>
     </div>
-    <div class="swiper-pagination"></div>
-    </section>
-    <!--EndSlider-->
+  </header>
 
-    <!--dishes-->
-    <section class="dishes"id="dishes">
-      <h3 class="sub-heading">Our Dishes</h3>
-      <h1 class="heading">Popular Dishes</h1>
-      <div class="box-container">
-        <div class="box">
-            <a href="javascript:void(0)"class="far fa-heart"></a>
-            <a href="javascript:void(0)"class="far fa-eye"></a>
-            <img src="./img/dishes/1.png" alt="">
-            <h3>Food</h3>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-              <span>$14.50</span>
-              <a class="btn">Add To Cart</a>
-            </div>
-          </div>
-          <div class="box">
-            <a href="javascript:void(0)"class="far fa-heart"></a>
-            <a href="javascript:void(0)"class="far fa-eye"></a>
-            <img src="./img/dishes/2.png" alt="">
-            <h3>Food</h3>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-              <span>$14.50</span>
-              <a class="btn">Add To Cart</a>
-            </div>
-          </div>
-          <div class="box">
-            <a href="javascript:void(0)"class="far fa-heart"></a>
-            <a href="javascript:void(0)"class="far fa-eye"></a>
-            <img src="./img/dishes/3.png" alt="">
-            <h3>Food</h3>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-              <span>$14.50</span>
-              <a class="btn">Add To Cart</a>
-            </div>
-          </div>
-          <div class="box">
-            <a href="javascript:void(0)"class="far fa-heart"></a>
-            <a href="javascript:void(0)"class="far fa-eye"></a>
-            <img src="./img/dishes/4.png" alt="">
-            <h3>Food</h3>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-              <span>$14.50</span>
-              <a class="btn">Add To Cart</a>
-            </div>
-          </div>
-          <div class="box">
-            <a href="javascript:void(0)"class="far fa-heart"></a>
-            <a href="javascript:void(0)"class="far fa-eye"></a>
-            <img src="./img/dishes/5.png" alt="">
-            <h3>Food</h3>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-              <span>$14.50</span>
-              <a class="btn">Add To Cart</a>
-            </div>
-          </div>
-          <div class="box">
-            <a href="javascript:void(0)"class="far fa-heart"></a>
-            <a href="javascript:void(0)"class="far fa-eye"></a>
-            <img src="./img/dishes/6.png" alt="">
-            <h3>Food</h3>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-              <span>$14.50</span>
-              <a class="btn">
-                <span>Add To Cart</span>
-                <i class="fas fa-cart-plus"></i>
-                      </a>
-            </div>
-          </div>
-        
-      </div> 
+  <!--Search-->
+  <form action="" id="search-form">
+    <input type="search" id="search-box" placeholder="Search..." />
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fa fa-times" id="searchFormClose"></i>
+  </form>
+  <!--EndSearch-->
 
-    </section>
-    <!--Enddishes-->
+  <!--Slider-->
+  <section class="home" id="home">
+    <div class="home-slider swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <div class="content">
+            <span>Hummus Pizza</span>
+            <h3>Our Special</h3>
+            <p>
+              This pizza uses hummus instead of the usual red sauce a unique
+              and healthy pizza for those bored with the traditional. Top with
+              your favorite veggies and cheese.
+            </p>
+            <a class="btn btn-Shadow" href="javascript:void(0)">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="/img/home/3.png">
+          </div>
+
+        </div>
+        <div class="slide swiper-slide">
+          <div class="content">
+            <span>Cheddar Chicken</span>
+            <h3>Our Special</h3>
+            <p>
+              A quick and easy coated chicken recipe for busy people on the go!
+            </p>
+            <a class="btn btn-Shadow" href="javascript:void(0)">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="/img/home/2.png">
+            </dir>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <div class="content">
+            <span>Spaghetti with Corned Beef</span>
+            <h3>Our Special</h3>
+            <p>
+              Quick and easy spaghetti using canned corned beef and bottled spaghetti sauce. Delicious! For added
+              nutrition, add a can of mixed vegetables or cut-up fresh vegetable, such as chopped onion or green peppers
+              and tomatoes.
+            </p>
+            <a class="btn btn-Shadow" href="javascript:void(0)">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="/img/home/1.png">
+            </dir>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+  </section>
+  <!--EndSlider-->
+
+  <!--dishes-->
+  <section class="dishes" id="dishes">
+    <h3 class="sub-heading">Our Dishes</h3>
+    <h1 class="heading">Popular Dishes</h1>
+    <div class="box-container">
+      <div class="box">
+        <a href="javascript:void(0)" class="far fa-heart"></a>
+        <a href="javascript:void(0)" class="far fa-eye"></a>
+        <img src="./img/dishes/1.png" alt="">
+        <h3>Food</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+          <span>$14.50</span>
+          <a class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <a href="javascript:void(0)" class="far fa-heart"></a>
+        <a href="javascript:void(0)" class="far fa-eye"></a>
+        <img src="./img/dishes/2.png" alt="">
+        <h3>Food</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <span>$14.50</span>
+        <a class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="javascript:void(0)" class="far fa-heart"></a>
+        <a href="javascript:void(0)" class="far fa-eye"></a>
+        <img src="./img/dishes/3.png" alt="">
+        <h3>Food</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <span>$14.50</span>
+        <a class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="javascript:void(0)" class="far fa-heart"></a>
+        <a href="javascript:void(0)" class="far fa-eye"></a>
+        <img src="./img/dishes/4.png" alt="">
+        <h3>Food</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <span>$14.50</span>
+        <a class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="javascript:void(0)" class="far fa-heart"></a>
+        <a href="javascript:void(0)" class="far fa-eye"></a>
+        <img src="./img/dishes/5.png" alt="">
+        <h3>Food</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <span>$14.50</span>
+        <a class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="javascript:void(0)" class="far fa-heart"></a>
+        <a href="javascript:void(0)" class="far fa-eye"></a>
+        <img src="./img/dishes/6.png" alt="">
+        <h3>Food</h3>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <span>$14.50</span>
+        <a class="btn">Add To Cart</a>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Enddishes-->
+
+  <!--StartAbout-->
+  <section class="about" id="about">
+    <h3 class="sub-heading">About Us</h3>
+    <h1 class="heading">Why Choose us</h1>
+
+    <div class="row">
+      <div class="image">
+        <img src="./img/about-img.png" alt="About">
+      </div>
+      <div class="content">
+        <h3>Best Food In The Country</h3>
+        <p>Paella is perhaps the most famous Spanish dish of all, and certainly one of the most abused. Authentic paella
+          originates from the region around Valencia, and comes in two varieties: Paella Valenciana, with rabbit and
+          chicken; and seafood paella.</p>
+        <p>Saffron gives the rice its color, and the base should be left to crisp into a mouth-watering black crust,
+          called the socarrat. Always eaten at lunchtime.</p>
+        <div class="icons-container">
+          <div class="icons">
+            <i class="fas fa-truck"></i>
+            <span>Free Delivery</span>
+          </div>
+          <div class="icons">
+            <i class="fas fas fa-dollar-sign"></i>
+            <span>easy Payment</span>
+          </div>
+          <div class="icons">
+            <i class="fas fas fa-headset"></i>
+            <span>24/7 Services</span>
+          </div>
+        </div>
+        <a href="Javascrit:void(0)" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!--EndAbout-->
+
+  <!--StartMenu-->
+  <section class="menu" id="menu">
+    <h3 class="sub-heading">Our Menu</h3>
+    <h1 class="heading">Today's Special Food</h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/1.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fas fa-star-half"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/2.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fas fa-star-half"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/3.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fas fa-star-half"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/4.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fas fa-star-half"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/5.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fas fa-star-half"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/6.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/7.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/8.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fas fa-star-half"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/menu/9.jpg" alt="menu-1">
+          <a href="" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>The reddest, ripest tomatoes, olive oil, garlic, bread, peppers and cucumber are blended until silky
+            smooth, then chilled and poured into bowls or glasses. So delicious, so refreshing. In Andalucía in southern
+            Spain, people have it every day in summer and there is always a jug on the counter in tapas bars. Also try
+            salmorejo from Córdoba, a thicker version that is often served with pieces of Ibérico ham on the top.</p>
+          <span class="price">$12.99</span>
+          <a href="javascript:void(0)" class="btn">Add To Cart</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--EndMenu-->
+  <!--StartPista-->
+  <section class="pista" id="pista">
+
+    <h3 class="sub-heading">Customer's Review</h3>
+    <h1 class="heading">What They Say</h1>
+
+    <div class="swiper-container pista-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <img src="/img/pic/2.png" alt="">
+            <div class="user-info">
+              <h3>Kamran Zare</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab qui optio sequi modi delectus illum?
+            Itaque commodi debitis amet accusamus, inventore dolorum ducimus, dolorem, hic iusto nobis at magnam?</p>
+        </div>
+
+        <div class="slide swiper-slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <img src="/img/pic/1.png" alt="">
+            <div class="user-info">
+              <h3>AmirHossain Zare</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab qui optio sequi modi delectus illum?
+            Itaque commodi debitis amet accusamus, inventore dolorum ducimus, dolorem, hic iusto nobis at magnam?</p>
+        </div>
+        <div class="slide swiper-slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <img src="/img/pic/3.png" alt="">
+            <div class="user-info">
+              <h3>Ali Mehrpour</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab qui optio sequi modi delectus illum?
+            Itaque commodi debitis amet accusamus, inventore dolorum ducimus, dolorem, hic iusto nobis at magnam?</p>
+        </div>
+        <div class="slide swiper-slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <img src="/img/pic/4.png" alt="">
+            <div class="user-info">
+              <h3>Farshid Farimi</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab qui optio sequi modi delectus illum?
+            Itaque commodi debitis amet accusamus, inventore dolorum ducimus, dolorem, hic iusto nobis at magnam?</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--EndPista-->
+  <!--Start Order Section-->
+  <section class="order" id="order">
+    <h3 class="sub-heading">OrderNow</h3>
+    <h1 class="heading">Free & Fast</h1>
+    <form onsubmit="javascript:void(0)">
+      <div class="inputBox">
+        <div class="input">
+          <span>YourName:</span>
+          <input type="text" placeholder="Enter Your Name">
+        </div>
+        <div class="input">
+          <span>YourNumber:</span>
+          <input type="number" placeholder="Enter Your Number">
+        </div>
+      </div>
+
+      <div class="inputBox">
+        <div class="input">
+          <span>YourOrder:</span>
+          <input type="text" placeholder="Enter Your Order">
+        </div>
+        <div class="input">
+          <span>additionalFood:</span>
+          <input type="test" placeholder="Extra With Food">
+        </div>
+      </div>
+
+      <div class="inputBox">
+        <div class="input">
+          <span>How Much:</span>
+          <input type="number" placeholder="Enter How Much">
+        </div>
+        <div class="input">
+          <span>Date&Time:</span>
+          <input type="date">
+        </div>
+      </div>
+
+      <div class="inputBox">
+        <div class="input">
+          <span>Your Address:</span>
+          <textarea placeholder="Enter Your Address" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="input">
+          <span>Your Message:</span>
+          <textarea placeholder="Enter Your Message" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <input type="submit" class="btn" value="Order Now">
+
+    </form>
+  </section>
+  <!--End Order Section-->
+
+  <!--Start Footer-->
+  <section class="footer">
+
+    <div class="box-container">
+      <div class="box">
+        <h3>Locations</h3>
+        <a href="">India</a>
+        <a href="">Japon</a>
+        <a href="">Russa</a>
+        <a href="">France</a>
+        <a href="">Iran</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="">Home</a>
+        <a href="">Dished</a>
+        <a href="">About</a>
+        <a href="">Menu</a>
+        <a href="">Review</a>
+        <a href="">order</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="tel:+989178855090"><i class="fas fa-phone-volume"></i>+989178855090</a>
+        <a href="https://www.instagram.com/kamibboy"><i class="fab fa-instagram"></i>kamibboy</a>
+        <a href=""><i class="fab fa-telegram"></i>kamibboy</a>
+        <a href=""><i class="fa fa-envelope"></i>kami.zare74@gmail.com</a>
+        <a href=""><i class="fa fa-map-marker"></i>Iran,Shiraz</a>
+        <a href="https://wa.me/+989178855090"><i class="fab fa-whatsapp"></i>+98917885590</a>
+      </div>
+
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="https://www.instagram.com/kamibboy"><i class="fab fa-instagram"></i>kamibboy</a>
+        <a href=""><i class="fab fa-telegram"></i>kamibboy</a>
+        <a href=""><i class="fab fa-whatsapp"></i>+98917885590</a>
+        <a href="https://www.facebook.com/kamran.zare74"><i class="fab fa-facebook"></i>kamran.zare74</a>
+        <a href=""><i class="fab fab fa-twitter"></i></a>
+      </div>
 
 
-    <script src="swiper-bundle.min.js"></script>
-    <script src="App.Js"></script>
-  </body>
+    </div>
+    <div class="credit">copyright @ 2022 by <span>Kamran Zare</span></div>
+  </section>
+
+
+  <!--End Footer-->
+
+  <!--Loader-->
+  <div class="loader-container">
+    <img src="./img/loader.gif">
+  </div>
+  <!--Loader-->
+
+
+  <script src="swiper-bundle.min.js"></script>
+  <script src="App.Js"></script>
+</body>
+
 </html>
